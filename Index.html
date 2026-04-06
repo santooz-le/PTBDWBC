@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <!-- Adiciona o ícone de aba de navegador-->
+    <link rel="stylesheet" href="css/conteudo.css">
+    <!-- Estilos para o conteúdo da tela principal-->
+    <title>HOME - IFSP - Pirituba - CSS - Parte 01</title>
+    <!-- Adiciona o título na aba do navegador-->
+    <script src="js/disabling.js"></script>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <!-- Indica o cabeçalho do nosso documento-->
+
+        <nav>
+            <object width="100%" height="200px" data="menu.html"></object>
+        </nav>
+
+    </header>
+
+    <!-- indica que é o conteúdo principal dessa página -->
+    <main id="conteudo">
+
+        <aside>
+            <!-- indica que é um conteúdo a parte do princial, auxiliar-->
+            <img src="Logo_IFSP.jpg" alt="Instituto Federal São Paulo" id="logo-topo" />
+
+            <h3>Cursos</h3>
+            <ul>
+                <li><a href="ads.html">Análise e Desenvolvimento de Sistemas</a></li>
+                <li><a href="engenharia-producao.html">Engenharia de Produção</a></li>
+                <li><a href="gestao-ti.html">Gestão em Tecnologia da Informação</a></li>
+                <li><a href="letras.html">Letras</a></li>
+                <li><a href="gestao-publica.html">Gestão Pública</a></li>
+            </ul>
+
+            <h3>Eventos</h3>
+            <figure style="max-width:620px;">
+                <img src="SEJA_RARO.jpg" alt="Palestra Seja Raro" width="100%" height="auto">
+                <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+            </figure>
+        </aside>
+
+        <section>
+            <h2>Sobre a Biblioteca</h2>
+            <img src="library.jpeg" alt="Biblioteca" style="width:110px; height:110px; display:block; margin:0;">
+
+            <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
+            <p><small><em>Publicado: Quarta-feira, 14 de agosto de 2019</em></small></p>
+
+            <h2>Conheça o SUAP</h2>
+            <div class="videoWrapper">
+                <p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <br><br>
+        <object width="100%" height="200px" data="rodape.html"></object>
+
+    </footer>
+
+    <!--INÍCIO: Utilização do Firebase!-->
+    <!--Não copiar este trecho se você não utiliza o Firebase!-->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"; const firebaseConfig = { apiKey: "AIzaSyDcr6AjxgAo2zFWohakGZVYvBQNOugOHmc", authDomain: "pwe-redes.firebaseapp.com", projectId: "pwe-redes", storageBucket: "pwe-redes.appspot.com",
+        messagingSenderId: "1014309916640", appId: "1:1014309916640:web:df2cba78c3efa68fb72585" }; const app = initializeApp(firebaseConfig);
+    </script>
+    <!--FIM: Utilização do Firebase!-->
+
+</body>
+
+</html>
