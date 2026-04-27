@@ -58,7 +58,8 @@ body {
 
 .dropdown__link {
   display: block;
-  padding: 10px 12px;
+  padding: 6px 10px;
+  font-size: 13px;
   color: #000;
   text-decoration: none;
 }
@@ -71,5 +72,20 @@ body {
 .dropdown:hover .dropdown__menu,
 .dropdown:focus-within .dropdown__menu {
   display: block;
+}
+
+.headerBrand {
+  background: #009900;
+  height: 95px;
+  position: relative;
+}
+
+.headerBrand__logo {
+  display: block;
+  width: 240px;
+  height: 95px;
+  object-fit: cover;
+  object-position: left center;
+  margin: 0;
 }
 

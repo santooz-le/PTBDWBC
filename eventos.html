@@ -2,82 +2,95 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/conteudo.css" />
-    <link rel="stylesheet" href="css/formularios.css" />
     <title>Eventos - IFSP - Pirituba</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <script src="js/disabling.js"></script>
   </head>
-  <body id="top">
-    <header>
-      <object width="100%" height="84px" data="menu.html"></object>
-      <img id="logo-topo" src="ifsp.png" alt="Instituto Federal São Paulo" />
+  <body>
+    <header id="cabecalho">
+      <nav>
+        <object width="100%" height="200px" data="menu.html"></object>
+      </nav>
     </header>
 
-    <main id="conteudo">
-      <section>
-        <h1>Inscreva-se</h1>
-
-        <form class="form-card" action="#" method="post">
-          <h2>Evento</h2>
-          <label for="evento">Selecione</label>
-          <select id="evento" name="evento" required>
-            <option value="" selected>-- Selecione --</option>
-            <option value="voe_sem_asas">Voe sem asas</option>
-            <option value="festa_junina">Festa junina</option>
-            <option value="semana_tecnologia">Semana de tecnologia</option>
+    <main>
+      <h1>Inscreva-se</h1>
+      <form method="POST">
+        <fieldset>
+          <label for="evento">Evento</label>
+          <select name="assunto" id="evento" required>
+            <option value=""> -- Selecione --</option>
+            <option value="voe">Voe sem asas</option>
+            <option value="jun">Festa junina</option>
+            <option value="inf">Semana de tecnologia</option>
           </select>
+        </fieldset>
 
-          <h2>Informações de Acesso</h2>
-          <label for="user">Usuário</label>
-          <input id="user" name="user" type="text" required />
+        <fieldset>
+          <legend>Informações de Acesso</legend>
+          <p>
+            <label for="inscrever-usuario">Usuário</label>
+            <input type="text" name="usuario" id="inscrever-usuario" required />
+          </p>
+          <p>
+            <label for="inscrever-senha">Senha</label>
+            <input type="password" name="senha" id="inscrever-senha" required />
+          </p>
+          <p>
+            <label for="inscrever-confirmar-senha">Confirme a Senha</label>
+            <input type="password" name="confirmar-senha" id="inscrever-confirmar-senha" required />
+          </p>
+        </fieldset>
 
-          <label for="senha">Senha</label>
-          <input id="senha" name="senha" type="password" required />
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <p>
+            <label for="inscrever-nome">Nome Completo</label>
+            <input type="text" name="nome" id="inscrever-nome" required />
+          </p>
+          <p>
+            <label for="inscrever-email">E-mail</label>
+            <input type="email" name="email" id="inscrever-email" required />
+          </p>
+          <p>
+            <label for="inscrever-celular">Celular (99) 99999-9999</label>
+            <input type="tel" name="celular" id="inscrever-celular" pattern="\\([0-9]{2}\\) [0-9]{4,6}-[0-9]{3,4}$" />
+          </p>
 
-          <label for="senha2">Confirme a Senha</label>
-          <input id="senha2" name="senha2" type="password" required />
+          <fieldset>
+            <legend>Sexo</legend>
+            <label for="inscrever-sexo-masc">Masculino
+              <input id="inscrever-sexo-masc" type="radio" name="sexo" value="M" />
+            </label>
+            <label for="inscrever-sexo-fem">Feminino
+              <input id="inscrever-sexo-fem" type="radio" name="sexo" value="F" />
+            </label>
+          </fieldset>
 
-          <h2>Informações Pessoais</h2>
-          <label for="nome">Nome Completo</label>
-          <input id="nome" name="nome" type="text" required />
+          <p>
+            <label for="inscrever-nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="inscrever-nascimento" />
+          </p>
+          <p>
+            <label for="inscrever-cor">Cor Favorita</label>
+            <input type="color" name="cor" id="inscrever-cor" />
+          </p>
+          <p>
+            <label for="inscrever-github">Perfil no Github</label>
+            <input type="url" name="github" id="inscrever-github" />
+          </p>
+        </fieldset>
 
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="cel">Celular (99) 99999-9999</label>
-          <input id="cel" name="cel" type="tel" placeholder="(99) 99999-9999" />
-
-          <div style="margin-top: 10px">Sexo</div>
-          <label>
-            <input type="radio" name="sexo" value="masculino" />
-            Masculino
-          </label>
-          <label style="margin-left: 12px">
-            <input type="radio" name="sexo" value="feminino" />
-            Feminino
-          </label>
-
-          <label for="nasc" style="margin-top: 10px; display: block"
-            >Data de Nascimento</label
-          >
-          <input id="nasc" name="nasc" type="text" placeholder="dd/mm/aaaa" />
-
-          <label for="cor">Cor Favorita</label>
-          <input id="cor" name="cor" type="text" placeholder="Ex.: verde" />
-
-          <label for="gh">Perfil no Github</label>
-          <input id="gh" name="gh" type="url" placeholder="https://github.com/..." />
-
-          <input type="submit" value="Inscrever" />
+        <p>
+          <input type="submit" value="Inscrever-se" />
           <input type="reset" value="Limpar" />
-        </form>
-      </section>
+        </p>
+      </form>
     </main>
 
     <footer>
-      <object width="100%" height="120px" data="rodape.html"></object>
+      <object width="100%" height="200px" data="rodape.html"></object>
     </footer>
   </body>
 </html>

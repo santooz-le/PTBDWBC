@@ -9,23 +9,8 @@ body {
   width: 100%;
 }
 
-/* faixa/banner IFSP (igual ao modelo) */
-#logo-topo {
-  //border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* faixa verde horizontal abaixo do menu */
-header {
-  background: #009900;
-}
-
-/* padrão “original”: imagens arredondadas */
 img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -33,29 +18,23 @@ img {
   height: auto;
 }
 
-/* exceções */
-#logo-topo,
-.toTop__img {
-  border-radius: 0;
-}
-
 figure {
   display: inline-block;
+  border: 0px dotted gray;
   margin: 20px;
 }
 
 figure img {
-  width: 100%;
   vertical-align: top;
 }
 
 /* Banner do evento em formato oval (como no modelo) */
 #img-palestra {
-  border-radius: 45% / 35%;
+  border-radius: 45%;
 }
 
 figure figcaption {
-  border: 1px solid #ccc;
+  border: 1px dotted blue;
   text-align: center;
   padding: 6px 8px;
 }
@@ -80,10 +59,12 @@ h1 {
 /* vídeo responsivo */
 .videoWrapper {
   position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  max-width: 100%;
 }
 
 .videoWrapper iframe {
@@ -92,5 +73,14 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#bloco-evento-home {
+  width: 100%;
+  text-align: center;
+}
+
+#bloco-evento-home figure {
+  display: inline-block;
 }
 
