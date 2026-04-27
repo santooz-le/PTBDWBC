@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>IFSP - Pirituba</title>
-<script src="js/disabling.js"></script>
-</head>
-<body>
-  <header>  
-  
-    <div id="my_menu" align="right">
-	  <a href="index.html" target="_top">HOME</a> | <a href="eventos.html" target="_top">EVENTOS</a> | <a href="contato.html" target="_top">CONTATO</a> | <a href="sobre.html" target="_top">SOBRE</a> | <a href="entrar.html" target="_top">ENTRAR</a>	   
-    </div>   
-           
-  </header>  
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IFSP - Pirituba</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="js/disabling.js"></script>
+  </head>
+  <body>
+    <header class="menuHeader">
+      <div class="brand">IFSP - Pirituba</div>
+
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#top" target="_top">Home</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#eventos" target="_top">Eventos</a>
+          </li>
+
+          <li class="menu__item dropdown">
+            <a class="menu__link dropdown__toggle" href="#" aria-haspopup="true">
+              Cursos
+            </a>
+            <ul class="dropdown__menu" aria-label="Lista de cursos">
+              <li>
+                <a class="dropdown__link" href="ads.html" target="_top">ADS</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="engenharia-producao.html" target="_top"
+                  >Engenharia de Produção</a
+                >
+              </li>
+              <li>
+                <a class="dropdown__link" href="gestao-ti.html" target="_top"
+                  >Gestão em TI</a
+                >
+              </li>
+              <li>
+                <a class="dropdown__link" href="letras.html" target="_top">Letras</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="gestao-publica.html" target="_top"
+                  >Gestão Pública</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="contato.html" target="_top">Contato</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="sobre.html" target="_top">Sobre</a>
+          </li>
+
+          <li class="menu__item dropdown">
+            <a class="menu__link dropdown__toggle" href="#" aria-haspopup="true">
+              CSS (Semana 06)
+            </a>
+            <ul class="dropdown__menu" aria-label="Demonstrações de CSS">
+              <li>
+                <a class="dropdown__link" href="css-dropdown.html" target="_top"
+                  >Dropdown</a
+                >
+              </li>
+              <li>
+                <a class="dropdown__link" href="css-layout.html" target="_top"
+                  >Layout (Flex/Grid)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown__link" href="css-selectors.html" target="_top"
+                  >Seletores</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="entrar.html" target="_top">Entrar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

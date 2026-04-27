@@ -1,50 +1,43 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/conteudo.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
     <title>Entrar - IFSP - Pirituba</title>
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <!-- Adiciona o ícone de aba de navegador-->
-    <link rel="stylesheet" href="css/formularios.css">
-    <script src="js/disabling.js"></script>
-</head>
-
-<body>
-
-    <header id="cabecalho">
-        <!-- Indica o cabeçalho do nosso documento-->
-        <nav>
-            <object width="100%" height="200px" data="menu.html"></object>
-        </nav>
-
+  </head>
+  <body id="top">
+    <header>
+      <object width="100%" height="84px" data="menu.html"></object>
     </header>
 
-    <main>
-        <!-- indica que é o conteúdo principal dessa página -->
+    <main id="conteudo">
+      <section>
         <h1>Entrar</h1>
-        <form method="POST">
-            <div>
-                <label for="entrar-usuario">Usuário</label>
-                <input type="text" name="usuario" id="entrar-usuario" required />
-            </div>
-            <br>
-            <div>
-                <label for="entrar-senha">Senha</label>
-                <input type="password" name="senha" id="entrar-senha" required />
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Entrar">
-                <a href="#">Esqueci a senha</a>
-            </div>
+
+        <form class="form-card" action="#" method="post">
+          <label for="user">Usuário</label>
+          <input id="user" name="user" type="text" required />
+
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" required />
+
+          <button type="submit">Entrar</button>
+          <button type="button" disabled title="Exemplo de :disabled no CSS">
+            Esqueci a senha
+          </button>
         </form>
+      </section>
     </main>
 
     <footer>
-        <object width="100%" height="200px" data="rodape.html"></object>
+      <a class="toTop" href="#top" aria-label="Voltar ao topo">
+        <img src="MoveTop.png" alt="" class="toTop__img" />
+      </a>
+      <object width="100%" height="120px" data="rodape.html"></object>
     </footer>
-
-</body>
-
+  </body>
 </html>
