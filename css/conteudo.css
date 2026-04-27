@@ -12,11 +12,18 @@ body {
 /* faixa/banner IFSP (igual ao modelo) */
 #logo-topo {
   display: block;
-  width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
+  width: 240px;
+  height: 80px;
+  object-fit: cover;
+  object-position: left center;
   margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* faixa verde horizontal abaixo do menu */
+header {
+  background: #009900;
 }
 
 /* padrão “original”: imagens arredondadas */
@@ -33,7 +40,6 @@ img {
 #logo-topo,
 .toTop__img {
   border-radius: 0;
-  width: 100%;
 }
 
 figure {
